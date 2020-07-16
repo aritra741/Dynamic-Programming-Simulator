@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="504.0" prefWidth="860.0" style="-fx-background-color: #ffffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="38.0" onAction="#changeScreenButtonPushed" prefHeight="149.0" prefWidth="241.0" ripplerFill="#607d8b" style="-fx-background-color: #263238;" text="0-1 Knapsack" textFill="#fffafa">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="303.0" layoutY="38.0" onAction="#changeScreenButtonPushed2" prefHeight="149.0" prefWidth="241.0" ripplerFill="#607d8b" style="-fx-background-color: #263238;" text="Coin Change" textFill="#fffafa">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="575.0" layoutY="38.0" onAction="#changeScreenButtonPushed4" prefHeight="149.0" prefWidth="241.0" ripplerFill="#607d8b" style="-fx-background-color: #263238;" text="LIS" textFill="#fffafa">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="305.0" onAction="#changeScreenButtonPushed3" prefHeight="149.0" prefWidth="241.0" ripplerFill="#607d8b" style="-fx-background-color: #263238;" text="LCS" textFill="#fffafa">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="310.0" layoutY="305.0" onAction="#changeScreenButtonPushed5" prefHeight="149.0" prefWidth="241.0" ripplerFill="#607d8b" style="-fx-background-color: #263238;" text="MCM" textFill="#fffafa">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="582.0" layoutY="305.0" onAction="#changeScreenButtonPushed6" prefHeight="149.0" prefWidth="241.0" ripplerFill="#607d8b" style="-fx-background-color: #263238;" text="Edit Distance" textFill="#fffafa">
+            <font>
+                <Font size="30.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+    </children>
+</AnchorPane>

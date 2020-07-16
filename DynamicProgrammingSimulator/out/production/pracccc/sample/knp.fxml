@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Knpcontroller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="150.0" style="-fx-background-color: #9AC2CC;">
+            <children>
+                <Text layoutX="43.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How many Items?" wrappingWidth="106.6328125">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="knpitm" alignment="CENTER" layoutX="16.0" layoutY="52.0" prefHeight="26.0" prefWidth="147.0" promptText="Number of items" />
+                <Text layoutX="10.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weights &amp; Costs of the items?">
+                    <font>
+                        <Font name="System Bold" size="11.0" />
+                    </font>
+                </Text>
+                <TextArea fx:id="wg" layoutX="6.0" layoutY="122.0" prefHeight="103.0" prefWidth="74.0" promptText="Weights" />
+                <TextArea fx:id="cst" layoutX="84.0" layoutY="122.0" prefHeight="103.0" prefWidth="74.0" promptText="Costs" />
+                <Text layoutX="45.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Weight?" />
+                <TextField fx:id="mxwg" alignment="CENTER" layoutX="21.0" layoutY="263.0" prefHeight="26.0" prefWidth="117.0" promptText="Maximum Weight" />
+                <Button layoutX="30.0" layoutY="359.0" mnemonicParsing="false" onAction="#ok4" prefHeight="32.0" prefWidth="100.0" text="SIMULATE" textFill="#2e0303">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+                <JFXSlider fx:id="slide" layoutX="12.0" layoutY="321.0" onMouseClicked="#click" prefHeight="26.0" prefWidth="135.0" showTickLabels="true" showTickMarks="true" />
+                <Text layoutX="58.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Speed" wrappingWidth="51.046875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Text>
+            <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="-1.0" layoutY="-2.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../arrow_back_black_96x96.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" ellipsisString="" layoutX="20.0" layoutY="454.0" onMouseClicked="#Play" prefHeight="32.0" prefWidth="38.0" style="-fx-background-color: grey;">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../play_arrow_black_48x48.png" />
+                     </image></ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" ellipsisString="" layoutX="89.0" layoutY="454.0" onMouseClicked="#Pause" prefHeight="32.0" prefWidth="38.0" style="-fx-background-color: grey;">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../pause_black_48x48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXToggleButton fx:id="toggle" layoutX="18.0" layoutY="391.0" onAction="#details" text="Show Details">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXToggleButton>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="488.0">
+            <children>
+                <ScrollPane fx:id="S1" layoutX="-4.0" layoutY="2.0" prefHeight="606.0" prefWidth="655.0" />
+            </children></AnchorPane>
+    </items>
+</SplitPane>
