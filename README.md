@@ -1,5 +1,5 @@
 # Dynamic Programming Simulator
-This is an object oriented programming project which can simulate six different types of dynamic programming based problems.The project was built using JavaFX in jdk 9.0.4 .It can simulate the following dynamic programming based problems by taking user input 
+This is an object oriented programming project which can simulate six different types of dynamic programming based problems. The project was built using JavaFX in jdk 9.0.4 . It can simulate the following dynamic programming based problems by taking user input 
 # Available Problems
 * 0-1 Knapsack
 * Coin Change
